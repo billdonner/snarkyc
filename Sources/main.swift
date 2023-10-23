@@ -40,7 +40,7 @@ struct Snarky: ParsableCommand {
   static var configuration = CommandConfiguration(
     abstract: "Generate A Script of ChatGPT Prompts From One Template and JSON File of Topic Data",
     discussion: "The template file is any file with $0 - $9 symbols that are replaced by values supplied in the JSON File.\nEach line of the JSON generates another prompt appended to the output script.\n",
-    version: "0.5.0")
+    version: "0.5.1")
   
   @Argument(  help: "The template file URL")
   var inputTextFileURL: String
